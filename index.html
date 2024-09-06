@@ -34,5 +34,33 @@
                 </code>
             </div>
         </div>
+        <hr>
+        <div class="iter_eum">
+            <h2>Iter와 enumerate함수</h2>
+            <h3>iter() 함수</h3>
+            <p>iter()함수는 반복을 끝낼 값을 지정할 수 있다.</p>
+            <code>
+                ls = list(range(10))
+                it = iter(ls)
+                for _ in range(len(ls) + 1):
+                    print(next(it)) # ls의 값을 0 부터 9까지 출력 그 후에 StopIteration 예외 발생
+            </code>
+            </br>
+            <h3>enumerate() 함수</h3>
+            <p>enumerate() 함수는 몇번째 반복문이지 확인이 가능하다.</p>
+            <p>튜플 형태로 (index, value)를 반환한다.</p>
+            <code>
+                ls = list(range(10))
+                for item in enumerate(ls):
+                    print(item, end=" ") # (0, 0) (1, 1) (2, 2) ...
+            </code>
+            </br>
+            <p>시작 인덱스 지정이 가능함.</p>
+            <code>
+                ls = list(range(10))
+                for item in enumerate(ls, 1):
+                    ... # (1,0) (2,1) ...
+            </code>
+        </div>
     </body>
 </html>
