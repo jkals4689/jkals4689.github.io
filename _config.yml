@@ -1,0 +1,8 @@
+title: 서성좌의 블로그
+description: 
+baseurl: "" 
+url: "https://jkals4689.github.io/jkals4689.github.io"
+
+# 기본 설정들
+markdown: kramdown
+paginate: 5 # 한 페이지당 표시할 포스트 수
